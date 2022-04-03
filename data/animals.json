@@ -129,6 +129,16 @@
       ],
       "scary": "scary",
       "id": "12"
+    },
+    {
+      "name": "Red Panda",
+      "species": "Bear",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "anxious",
+        "loving"
+      ],
+      "id": "13"
     }
   ]
 }
