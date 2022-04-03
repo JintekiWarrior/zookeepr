@@ -108,7 +108,23 @@ app.post('/api/animals', (req, res) => {
   }
 })
 
+// serves the index.html route
 app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/index.html'))
+})
+
+// serves the animals.html route 
+app.get('/animals', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/animals.html'))
+})
+
+// serves the zookeepers.html
+app.get('/zookeepers', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/zookeepers.html'))
+})
+
+// serves wildcard route 
+app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'))
 })
 
